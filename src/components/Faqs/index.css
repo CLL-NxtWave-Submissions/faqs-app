@@ -1,1 +1,28 @@
-/* Write your code here. */
+.faqs-bg-container {
+  background-color: #f1f5f8;
+  padding: 1.5rem;
+  min-height: 100vh;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.faqs-content-container {
+  background-color: #ffffff;
+  border-radius: 1rem;
+  border: 0.1rem solid #e4e7eb;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 0 0.5rem 0 #e4e7eb;
+}
+
+.faqs-header {
+  color: #cb8805;
+  font-size: 3rem;
+  margin-bottom: 1rem;
+  text-align: center;
+}
