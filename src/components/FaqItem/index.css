@@ -39,7 +39,6 @@
 .faq-question-answer-separator {
   width: 100%;
   border-top: 0.1rem solid #9aa5b1;
-  display: block;
   margin-top: 0;
   margin-bottom: 0.5rem;
 }
@@ -49,9 +48,4 @@
   font-size: 1rem;
   font-weight: 550;
   text-align: left;
-  display: block;
-}
-
-.hide-element {
-  display: none;
 }
