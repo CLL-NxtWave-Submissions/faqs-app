@@ -9,7 +9,7 @@ const FaqItem = props => {
   return (
     <li className="faq-item-container">
       <div className="faq-question-container">
-        <p className="faq-question-text">{questionText}</p>
+        <h1 className="faq-question-text">{questionText}</h1>
         <button
           type="button"
           className="faq-toggle-answer-button"
