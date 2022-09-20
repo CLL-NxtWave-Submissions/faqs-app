@@ -4,17 +4,19 @@ import './index.css'
 import FaqItem from '../FaqItem'
 
 export default class Faqs extends Component {
-  state = {
-    faqsToggleAnswerStatusList: this.generateInitialFaqsToggleAnswerStatusList(),
-  }
+  constructor(props) {
+    super(props)
 
-  generateInitialFaqsToggleAnswerStatusList = () => {
-    const {faqsList} = this.props
+    const {faqsList} = props
 
-    return faqsList.map(faqsListItem => ({
+    const initialFaqsToggleAnswerStatusList = faqsList.map(faqsListItem => ({
       faqId: faqsListItem.id,
       showAnswer: false,
     }))
+
+    this.state = {
+      faqsToggleAnswerStatusList: initialFaqsToggleAnswerStatusList,
+    }
   }
 
   onFAQAnswerDisplayToggle = toggledFaqId => {
